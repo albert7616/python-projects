@@ -29,7 +29,7 @@ button = tk.Button (
 button.pack(side=tk.left)
 close = tk.Button (
     frame,
-    text = 'QUIT'
+    text = 'QUIT',
     command= quit()
      
 )

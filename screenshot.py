@@ -1,5 +1,6 @@
 import time
 import pyautogui
+import tkinter as tk
 
 
 def screenshot():
@@ -15,4 +16,24 @@ def screenshot():
 
 
 
-screenshot()
+root = tk.Tk()
+frame = tk.Frame(root)
+frame.pacK()
+
+button = tk.Button (
+    frame,
+    text = 'Take Screenshot',
+    command = screenshot()
+)
+
+button.pack(side=tk.left)
+close = tk.Button (
+    frame,
+    text = 'QUIT'
+    command= quit()
+     
+)
+
+close.pack(side=tk.LEFT)
+
+root.mainloop()
